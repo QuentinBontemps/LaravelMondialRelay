@@ -1,0 +1,32 @@
+{
+  "name": "quentinbontemps/laravel-mondialrelay",
+  "description": "Client Laravel pour l'API Mondial Relay",
+  "keywords": ["laravel", "laravel5", "mondial relay", "api"],
+  "require": {
+    "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
+    "quentinbontemps/php-mondialrelay-api": "^2.0"
+  },
+  "type": "library",
+  "license": "MIT",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Quentin BONTEMPS",
+      "email": "q.bontemps@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "QuentinBontemps\\LaravelMondialRelay\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "QuentinBontemps\\LaravelMondialRelay\\LaravelMondialRelayServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

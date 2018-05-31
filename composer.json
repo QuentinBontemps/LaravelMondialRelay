@@ -4,11 +4,11 @@
   "keywords": ["laravel", "laravel5", "mondial relay", "api"],
   "require": {
     "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
-    "quentinbontemps/php-mondialrelay-api": "^2.0"
+    "quentinbontemps/php-mondialrelay-api": "^1.0"
   },
   "type": "library",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "Quentin BONTEMPS",

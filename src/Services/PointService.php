@@ -16,22 +16,22 @@ class PointService
         $close = true;
         $return = [];
 
-        if ($hours->openingTime1())
+        if ($hours->openingTime1() && $hours->openingTime1() != '0000')
         {
             $close = false;
             $return[] = date_format(date_create_from_format('Hi', $hours->openingTime1()), 'H:i');
         }
-        if ($hours->closingTime1())
+        if ($hours->closingTime1() && $hours->closingTime1() != '0000')
         {
             $close = false;
             $return[] = date_format(date_create_from_format('Hi', $hours->closingTime1()), 'H:i');
         }
-        if ($hours->openingTime2())
+        if ($hours->openingTime2() && $hours->openingTime2() != '0000')
         {
             $close = false;
             $return[] = date_format(date_create_from_format('Hi', $hours->openingTime2()), 'H:i');
         }
-        if ($hours->closingTime2())
+        if ($hours->closingTime2() && $hours->closingTime2() != '0000')
         {
             $close = false;
             $return[] = date_format(date_create_from_format('Hi', $hours->closingTime2()), 'H:i');

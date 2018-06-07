@@ -15,7 +15,8 @@ class LaravelMondialRelayServiceProvider extends ServiceProvider
 
     public function boot()
     {
-
+        // Load translations
+        $this->loadTranslationsFrom($this->_root . 'resources/lang', 'laravel-mondialrelay');
     }
 
     public function register()
@@ -26,6 +27,7 @@ class LaravelMondialRelayServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             $this->_root . 'config/mondialrelay.php', 'laravel-mondialrelay'
         );
+
         if (App::runningInConsole())
         {
             /**

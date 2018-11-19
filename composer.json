@@ -3,12 +3,12 @@
   "description": "Client Laravel pour l'API Mondial Relay",
   "keywords": ["laravel", "laravel5", "mondial relay", "api"],
   "require": {
-    "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
+    "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*",
     "quentinbontemps/php-mondialrelay-api": "^1.0"
   },
   "type": "library",
   "license": "MIT",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "authors": [
     {
       "name": "Quentin BONTEMPS",

@@ -43,7 +43,7 @@ php artisan vendor:publish --tag=laravel_mondialrelay_config
 ## Usage
 
 ```php
-use use QuentinBontemps\LaravelMondialRelay\Facades\LaravelMondialRelay;
+use QuentinBontemps\LaravelMondialRelay\Facades\LaravelMondialRelay;
 
 $client = LaravelMondialRelay::client();
 

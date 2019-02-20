@@ -37,8 +37,15 @@ class LaravelMondialRelay
             }
         }
 
-        $client = new \SoapClient(config('laravel-mondialrelay.wsdl'), $options);
+        try
+        {
+            $client = new \SoapClient(config('laravel-mondialrelay.wsdl'), $options);
+        } catch (\Exception $e)
+        {
+            \Log::error($e);
 
+            return;
+        }
 
         return new ApiClient($client, $site_id, $site_key);
     }
